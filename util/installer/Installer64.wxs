@@ -104,7 +104,7 @@
           </Component>
 
           <Component Id='RenderDocCMD' Win64="yes" Guid='3443061F-2B11-4661-8535-4319D97B375C'>
-            <File Id='RenderDocCMD' Name='renderdoccmd.exe' DiskId='1' Source='dist/Release64/renderdoccmd.exe' KeyPath='yes' />
+            <File Id='RenderDocCMD' Name='zhuadoccmd.exe' DiskId='1' Source='dist/Release64/zhuadoccmd.exe' KeyPath='yes' />
           </Component>
 
           <Component Id='Qt' Win64="yes" Guid='E1BC516F-F611-4C7B-8F3E-A459F026FC4E'>
@@ -219,8 +219,8 @@
             <Component Id='renderdocX86Bins' Win64="yes" Guid='EB58A048-899A-4239-B229-DA9781C431F8'>
               <File Id='renderdocX86DLL' Name='renderdoc.dll' DiskId='1' Source='dist/Release64/x86/renderdoc.dll' KeyPath='yes' />
               <File Id='renderdocX86JSON' Name='renderdoc.json' DiskId='1' Source='dist/Release64/x86/renderdoc.json' />
-              <File Id='renderdocshimX86DLL' Name='renderdocshim32.dll' DiskId='1' Source='dist/Release64/x86/renderdocshim32.dll' />
-              <File Id='renderdocX86CMD' Name='renderdoccmd.exe' DiskId='1' Source='dist/Release64/x86/renderdoccmd.exe' />
+              <File Id='renderdocshimX86DLL' Name='zhuadocshim32.dll' DiskId='1' Source='dist/Release64/x86/zhuadocshim32.dll' />
+              <File Id='renderdocX86CMD' Name='zhuadoccmd.exe' DiskId='1' Source='dist/Release64/x86/zhuadoccmd.exe' />
               <File Id='dbghelp32DLL' Name='dbghelp.dll' DiskId='1' Source='dist/Release64/x86/dbghelp.dll' />
               <File Id='symsrv32DLL' Name='symsrv.dll' DiskId='1' Source='dist/Release64/x86/symsrv.dll' />
               <File Id='symsrv32YES' Name='symsrv.yes' DiskId='1' Source='dist/Release64/x86/symsrv.yes' />

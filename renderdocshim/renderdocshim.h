@@ -37,5 +37,5 @@ struct ShimData
 #define SHIM_DLL_NAME "renderdocshim64.dll"
 #else
 #define GLOBAL_HOOK_DATA_NAME "RenderDocGlobalHookData32"
-#define SHIM_DLL_NAME "renderdocshim32.dll"
+#define SHIM_DLL_NAME "zhuadocshim32.dll"
 #endif

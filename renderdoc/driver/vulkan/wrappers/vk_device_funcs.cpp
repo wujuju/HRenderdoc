@@ -48,7 +48,7 @@ static VkApplicationInfo renderdocAppInfo = {
     NULL,
     "RenderDoc Capturing App",
     VK_MAKE_VERSION(RENDERDOC_VERSION_MAJOR, RENDERDOC_VERSION_MINOR, 0),
-    "RenderDoc",
+    "qzhuadoc",
     VK_MAKE_VERSION(RENDERDOC_VERSION_MAJOR, RENDERDOC_VERSION_MINOR, 0),
     VK_API_VERSION_1_0,
 };
