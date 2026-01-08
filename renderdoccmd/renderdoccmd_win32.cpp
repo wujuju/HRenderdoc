@@ -146,7 +146,7 @@ WindowingData DisplayRemoteServerPreview(bool active, const rdcarray<WindowingSy
       AdjustWindowRect(&wr, WS_OVERLAPPEDWINDOW, FALSE);
 
       HWND wnd =
-          CreateWindowEx(WS_EX_CLIENTEDGE, L"renderdoccmd", L"Remote Server Preview",
+          CreateWindowEx(WS_EX_CLIENTEDGE, L"zhuadoccmd", L"Remote Server Preview",
                          WS_OVERLAPPED | WS_CAPTION | WS_MINIMIZEBOX, CW_USEDEFAULT, CW_USEDEFAULT,
                          wr.right - wr.left, wr.bottom - wr.top, NULL, NULL, hInstance, NULL);
 
@@ -193,7 +193,7 @@ void DisplayRendererPreview(IReplayController *renderer, TextureDisplay &display
   RECT wr = {0, 0, (LONG)width, (LONG)height};
   AdjustWindowRect(&wr, WS_OVERLAPPEDWINDOW, FALSE);
 
-  HWND wnd = CreateWindowEx(WS_EX_CLIENTEDGE, L"renderdoccmd", L"renderdoccmd", WS_OVERLAPPEDWINDOW,
+  HWND wnd = CreateWindowEx(WS_EX_CLIENTEDGE, L"zhuadoccmd", L"zhuadoccmd", WS_OVERLAPPEDWINDOW,
                             CW_USEDEFAULT, CW_USEDEFAULT, wr.right - wr.left, wr.bottom - wr.top,
                             NULL, NULL, hInstance, NULL);
 
@@ -907,7 +907,7 @@ int main(int, char *)
     argv[i] = conv(std::wstring(wargv[i]));
 
   if(argv.empty())
-    argv.push_back("renderdoccmd");
+    argv.push_back("zhuadoccmd");
 
   LocalFree(wargv);
 
@@ -924,7 +924,7 @@ int main(int, char *)
   wc.hCursor = LoadCursor(NULL, IDC_ARROW);
   wc.hbrBackground = (HBRUSH)(COLOR_WINDOW + 1);
   wc.lpszMenuName = NULL;
-  wc.lpszClassName = L"renderdoccmd";
+  wc.lpszClassName = L"zhuadoccmd";
   wc.hIconSm = LoadIcon(NULL, MAKEINTRESOURCE(IDI_ICON));
 
   if(!RegisterClassEx(&wc))

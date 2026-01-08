@@ -319,7 +319,7 @@ void RenderDoc::RecreateCrashHandler()
 
   // only create crash handler when we're not in renderdoccmd (to prevent infinite loop as
   // the crash handler itself launches renderdoccmd)
-  if(exename.contains("renderdoccmd"))
+  if(exename.contains("zhuadoccmd"))
     return;
 
 #if ENABLED(RDOC_WIN32)

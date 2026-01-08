@@ -13,7 +13,7 @@
 
   <application android:debuggable="true" android:label="RenderDocCmd" android:icon="@drawable/icon" android:hasCode="true">
     <activity android:name=".Loader" android:label="RenderDoc" android:exported="true" android:screenOrientation="landscape" android:configChanges="orientation|keyboardHidden" android:theme="@android:style/Theme.NoTitleBar">
-      <meta-data android:name="android.app.lib_name" android:value="renderdoccmd"/>
+      <meta-data android:name="android.app.lib_name" android:value="zhuadoccmd"/>
     </activity>
 
   </application>
