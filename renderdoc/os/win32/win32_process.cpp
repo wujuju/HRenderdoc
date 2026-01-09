@@ -210,9 +210,20 @@ extern "C" __declspec(dllexport) void __cdecl INTERNAL_SetCaptureFile(const char
     RenderDoc::Inst().SetCaptureFileTemplate(capfile);
 }
 
+extern "C" RENDERDOC_API void RENDERDOC_CC RENDERDOC_SetDebugLogFile2(const rdcstr &log)
+{
+  if(!log.empty())
+  {
+    RDCLOGFILE(log.c_str());
+
+    // need to recreate the crash handler to propagate the new log filename.
+    RenderDoc::Inst().RecreateCrashHandler();
+  }
+}
+
 extern "C" __declspec(dllexport) void __cdecl INTERNAL_SetDebugLogFile(const char *logfile)
 {
-  RENDERDOC_SetDebugLogFile(logfile ? logfile : rdcstr());
+  RENDERDOC_SetDebugLogFile2(logfile ? logfile : rdcstr());
 }
 
 static EnvironmentModification tempEnvMod;

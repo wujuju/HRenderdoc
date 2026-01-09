@@ -320,7 +320,10 @@ void RenderDoc::RecreateCrashHandler()
   // only create crash handler when we're not in renderdoccmd (to prevent infinite loop as
   // the crash handler itself launches renderdoccmd)
   if(exename.contains("zhuadoccmd"))
-    return;
+  {
+    RDCERR("zhuadoccmd is not supported.");
+     return;
+  } 
 
 #if ENABLED(RDOC_WIN32)
   // there are way too many invalid reports coming from chrome, completely disable the crash handler
